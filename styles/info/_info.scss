@@ -1,7 +1,5 @@
 .info {
-    display: flex;
     display: grid;
-    grid-template: 4 fr/ 3 fr;
     border: 7px solid red;
     margin:auto;
 
@@ -19,18 +17,18 @@
         display: inline-block;
         border: 5px solid orange;
     }
+    .left_para{
+        display: inline-block;
+        border: 5px solid green;
+        grid-column: 3/4;
+    }
     .right_title{
         display: inline-flex;
         background-color: red;
-        // grid-row: 2;
-        // grid-column: 2/4;
     }
 
     .video{
         border: 5px solid orange;
-    }
-    .left_para{
-        justify-content: center;
     }
 
 }
