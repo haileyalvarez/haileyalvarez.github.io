@@ -1,0 +1,36 @@
+.info {
+    display: flex;
+    display: grid;
+    grid-template: 4 fr/ 3 fr;
+    border: 7px solid red;
+    margin:auto;
+
+    .main_pic{ //BOX DOESNT FOLLOW PIC SIZE
+        border: 7px solid blue;
+        grid-row: 1;
+        grid-column: 1/4;
+        overflow:hidden;
+    }
+    .main_pic img{
+        height:fit-content;
+    }
+
+    .left_numbers{
+        display: inline-block;
+        border: 5px solid orange;
+    }
+    .right_title{
+        display: inline-flex;
+        background-color: red;
+        // grid-row: 2;
+        // grid-column: 2/4;
+    }
+
+    .video{
+        border: 5px solid orange;
+    }
+    .left_para{
+        justify-content: center;
+    }
+
+}

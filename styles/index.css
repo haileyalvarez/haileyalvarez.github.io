@@ -1,0 +1,88 @@
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+/* min body height */
+body {
+  min-height: 100vh;
+}
+
+a, button {
+  cursor: revert;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+}
+
+.header {
+  display: grid;
+  grid-template: 1 fr/3 fr;
+}
+
+.head_left {
+  display: inline-flex;
+  justify-content: left;
+}
+
+.head_menu {
+  display: inline-flex;
+  grid-column: 3;
+  grid-row: 1;
+  justify-content: right;
+}
+
+.info {
+  display: flex;
+  display: grid;
+  grid-template: 4 fr/3 fr;
+  border: 7px solid red;
+  margin: auto;
+}
+.info .main_pic {
+  border: 7px solid blue;
+  grid-row: 1;
+  grid-column: 1/4;
+  overflow: hidden;
+}
+.info .main_pic img {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.info .left_numbers {
+  display: inline-block;
+  border: 5px solid orange;
+}
+.info .right_title {
+  display: inline-flex;
+  background-color: red;
+}
+.info .video {
+  border: 5px solid orange;
+}
+.info .left_para {
+  justify-content: center;
+}/*# sourceMappingURL=index.css.map */
