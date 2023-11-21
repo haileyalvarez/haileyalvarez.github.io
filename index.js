@@ -1,50 +1,59 @@
-// const color = 300;
-// const color2 = "300";
-// let secondColor = "pink";
-// console.log("secondColor: ", secondColor);
+let img = document.getElementById("slide");
+let buttonHome = document.getElementById("home");
+let buttonPrj = document.getElementById("projects");
+let buttonBlog = document.getElementById("blog");
+let buttonAbout = document.getElementById("about");
+let aboutpg = document.getElementsByName("about.html");
+let imgArray = [
+    "images/env.jpg",
+    "images/hand.jpg",
+    "images/person.jpg",
+    "images/pyramid.jpg",
+];
+let imgIndex = 0;
 
-// secondColor = "blue";
-// console.log("after resassign secondColor: ", secondColor);
+function actHome(){
+    alert("inside home button");
+    //link to homepage
+}
 
-// console.log(document);
+function actPrj(){
+    alert("inside project button");
+    //link to projects
+}
+function actBlog(){
+    alert("inside blog button");
+    //link to projects
+}
+// function actAbout(){
+//     alert("inside about button");
+//     //link to projects
+//     window.open('about.html');
+// }
+function slideShow(){
+    alert("inside slide");
+    img.setAttribute("src",imgArray[imgIndex]);
+    imgArray ++;
+    alert("added to program");
+    if (imgIndex<=imgArray.length){
+        imgArray = 0;
+        alert("added index");
+    }
+};
 
-// const section = document.querySelectorAll(".section");
-// console.log(section);
+buttonHome.onclick = function(){
+    actHome();
+};
 
-// const li1 = document.getElementById("listItem1");
-// li1.innerHTML = "Whatever we want";
-
-// const sections = document.getElementsByClassName("section");
-
-// sections[0].style.backgroundColor = "red";
-
-// sections[0].onclick = function () {
-// 	console.log("inside the click handler");
+buttonPrj.onclick = function(){
+    actPrj();
+};
+buttonBlog.onclick = function(){
+    actBlog();
+};
+// buttonAbout.onclick = function(){
+//     actAbout();
 // };
-
-// sections[0].onmouseleave = function () {
-// 	sections[0].style.backgroundColor = "green";
-// };
-
-// document.addEventListener(
-// 	"keydown",
-// 	function (event) {
-// 		console.log(event);
-// 		const name = event.key;
-// 		// console.log("key pressed: ", name);
-// 		// var code = event.code;
-// 		if (name === "Escape") {
-// 			sections[0].style.backgroundColor = "pink";
-// 		}
-// 	},
-// 	false
-// );
-
-// const newElement = document.createElement("blockquote");
-
-// const newParagraph = document.createElement("p");
-
-// newParagraph.innerHTML = "Hello all -Wade";
-
-// newElement.appendChild(newParagraph);
-// document.body.appendChild(newElement);
+img.onclick = function(){
+    slideShow();
+};

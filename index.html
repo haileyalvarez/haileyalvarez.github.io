@@ -6,24 +6,30 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="./styles/index.css">
   <script src="index.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  </style>
 </head>
 <body>
  <div class="header">
   <div class = "head_left">
-    <button>
-      Hailey Alvarez Character FX
+    <button id ="home">
+      HAILEY ALVAREZ | CHARACTER FX
     </button>
   </div>
   <div class = "head_menu">
     <button id="projects">
-      Projects
+      PROJECTS
     </button>
     <button id = "blog">
-      Blog
+      BLOG
     </button>
-    <button id="about">
-      About
-    </button>
+    <a href="about.html">
+      <button id="about">
+        ABOUT
+      </button>
+    </a>
+    
   </div>
   
  </div>
@@ -49,23 +55,33 @@
         <h3>
           PROGRAMS USED
         </h3>
+        <div class="progIcons">
+          <img src="./images/maya.png" alt="mayaicon">
+          <img src="./images/zbrush.png" alt="zbrushicon">
+          <img src="./images/unreal.png" alt="unrealicon">
+          <img src="./images/houdini.png" alt="houdiniicon">
+        </div>
       </div>
       <div class="left_para">
         <div class="right_title">
           <h1>PROJECT TITLE</h1>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Details:Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ducimus optio quos asperiores omnis odit similique dolor hic aspernatur. Eligendi, non reprehenderit reiciendis earum suscipit qui quae dignissimos perspiciatis magni.</p>
       </div>
     </div>
     <div class ="video">
       <img src="images/pyramid.jpg" alt="video">
+      <!-- <a href="http://https://www.youtube.com/watch?v=iicfmXFALM8"></a> -->
     </div>
+    
   </div>
   <div class="right_info">
     <div class="slideshow">
-      <img src="images/person.jpg" alt="slide">
+      <img src="images/person.jpg" id="slide">
     </div>
     <div class="right_para">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur quasi libero ipsam. Aliquid distinctio eius ipsam eligendi, mollitia veniam laudantium? Rem, sunt fugiat. Consequatur architecto quia quo odio maiores.</p>
     </div>
   </div>
  </div>

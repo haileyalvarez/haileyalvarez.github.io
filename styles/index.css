@@ -21,6 +21,9 @@ body {
 
 a, button {
   cursor: revert;
+  font-family: "Oswald", sans-serif;
+  background: none;
+  border: none;
 }
 
 /* responsive images/videos */
@@ -41,27 +44,26 @@ input, textarea {
 .header {
   display: grid;
   grid-template: 1 fr/3 fr;
+  font-size: 20px;
 }
-
-.head_left {
-  display: inline-flex;
+.header .head_left {
   justify-content: left;
 }
-
-.head_menu {
+.header .head_menu {
   display: inline-flex;
   grid-column: 3;
   grid-row: 1;
-  justify-content: right;
+  justify-content: end;
+  gap: 10px;
 }
 
 .info {
   display: grid;
-  border: 7px solid red;
+  font-family: "Oswald", sans-serif;
   margin: auto;
+  gap: 20px;
 }
 .info .main_pic {
-  border: 7px solid blue;
   grid-row: 1;
   grid-column: 1/4;
   overflow: hidden;
@@ -70,18 +72,32 @@ input, textarea {
   height: -moz-fit-content;
   height: fit-content;
 }
+.info .details {
+  display: flex;
+  padding: 0px 0px 0px 70px;
+  gap: 200px;
+}
 .info .left_numbers {
-  display: inline-block;
-  border: 5px solid orange;
+  padding: 5px;
+}
+.info .left_numbers h3 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.info .left_numbers .progIcons {
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 2;
 }
 .info .left_para {
   display: inline-block;
-  border: 5px solid green;
   grid-column: 3/4;
 }
 .info .right_title {
   display: inline-flex;
-  background-color: red;
+  font-weight: 600;
+  letter-spacing: 2px;
+  justify-self: end;
 }
 .info .video {
   border: 5px solid orange;
