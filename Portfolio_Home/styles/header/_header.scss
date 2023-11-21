@@ -1,0 +1,15 @@
+.header{
+    display: grid;
+    grid-template: 1 fr/3 fr;
+}
+.head_left{
+    display: inline-flex;
+    justify-content: left;
+}
+.head_menu{
+    display: inline-flex;
+    grid-column: 3;
+    grid-row: 1;  
+    justify-content:right;
+    gap: 10px;
+}

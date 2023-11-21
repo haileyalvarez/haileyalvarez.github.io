@@ -1,0 +1,54 @@
+.info {
+    display: grid;
+    //border: 7px solid red;
+    font-family: 'Oswald', sans-serif;
+    margin:auto;
+    gap: 20px;
+
+    .main_pic{ //BOX DOESNT FOLLOW PIC SIZE
+        //border: 7px solid blue;
+        grid-row: 1;
+        grid-column: 1/4;
+        overflow:hidden;
+    }
+    .main_pic img{
+        height:fit-content;
+    }
+
+    .details{
+        display: flex;
+        padding: 0px 0px 0px 70px;
+        gap: 200px;
+    }
+    .left_numbers{
+        //border: 5px solid orange;
+        padding: 5px;
+        h3{
+            font-weight: 600;
+            letter-spacing:2px ;
+        }
+        .progIcons{
+            display: grid;
+            grid-template-rows: 2;
+            grid-template-columns: 2;
+        }
+    }
+    .left_para{
+        display: inline-block;
+        //border: 5px solid green;
+        grid-column: 3/4;
+    }
+    .right_title{
+        display: inline-flex;
+        font-weight: 600;
+        letter-spacing:2px;
+        //border: 3px solid yellow;
+        //Move title to the right
+        justify-self: end;
+    }
+
+    .video{
+        border: 5px solid orange;
+    }
+
+}
