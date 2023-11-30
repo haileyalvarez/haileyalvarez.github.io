@@ -1,0 +1,68 @@
+.middleImgs {
+    display: grid;
+    // border: 7px solid orange;
+    grid-template-rows: 110px;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+    // max-height: 900px;
+    max-width: 1200px;
+    .titleBIO{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 90px;
+        // border: 5px solid yellow;
+        font-size: 40px;
+    }
+    .fam{
+        // display: flex;
+        max-height: 400px;
+        max-width: 300px;
+        align-items: center;
+        justify-self: center;
+        // border: 7px solid red;
+        position: absolute;
+        overflow:hidden;
+    }
+    .me{
+        // display: flex;
+        max-height: 500px;
+        max-width: 500px;
+        // border: 7px solid red;
+        overflow:hidden;
+        position: relative;
+        width: 100%;
+    }
+    .bioInfo{
+        justify-self:right;
+        width:35%
+    }
+    padding-top: 80px;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+.aboutheader button{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+.aboutheader{
+    display: grid;
+    padding: 10px;
+    grid-template: 1 fr/3 fr;
+    font-size: 20px;
+    .head_left{
+        display: flex;
+        justify-self: left;
+    }
+    .head_menu{
+        display:flex;
+        grid-column: 3;
+        grid-row: 1;  
+        justify-self:right;
+        gap: 20px;
+    }
+    position:absolute;
+    width: 100%;
+}

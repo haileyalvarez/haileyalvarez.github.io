@@ -1,4 +1,4 @@
-let img = document.getElementById("slide");
+let img = document.getElementById("slideshow");
 let buttonHome = document.getElementById("home");
 let buttonPrj = document.getElementById("projects");
 let buttonBlog = document.getElementById("blog");
@@ -12,10 +12,12 @@ let imgArray = [
 ];
 let imgIndex = 0;
 
-function actHome(){
-    alert("inside home button");
-    //link to homepage
-}
+// function actHome(){
+//     buttonHome.style.fontSize = '35px';
+// }
+// function actHomeOG(){
+//     buttonHome.style.fontSize = '30px';
+// }
 
 function actPrj(){
     alert("inside project button");
@@ -30,20 +32,21 @@ function actBlog(){
 //     //link to projects
 //     window.open('about.html');
 // }
-function slideShow(){
-    alert("inside slide");
+function Show(){
     img.setAttribute("src",imgArray[imgIndex]);
     imgArray ++;
-    alert("added to program");
     if (imgIndex<=imgArray.length){
         imgArray = 0;
-        alert("added index");
     }
+    $
 };
 
-buttonHome.onclick = function(){
+buttonHome.onmouseover = function(){
     actHome();
 };
+buttonHome.onmouseleave = function(){
+    actHomeOG();
+}
 
 buttonPrj.onclick = function(){
     actPrj();
@@ -54,6 +57,6 @@ buttonBlog.onclick = function(){
 // buttonAbout.onclick = function(){
 //     actAbout();
 // };
-img.onclick = function(){
-    slideShow();
-};
+// img.onclick = function(){
+//     Show();
+// };

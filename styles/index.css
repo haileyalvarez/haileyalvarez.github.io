@@ -41,44 +41,56 @@ input, textarea {
           user-select: auto;
 }
 
-.header {
-  display: grid;
-  grid-template: 1 fr/3 fr;
-  font-size: 20px;
-}
-.header .head_left {
-  justify-content: left;
-}
-.header .head_menu {
-  display: inline-flex;
-  grid-column: 3;
-  grid-row: 1;
-  justify-content: end;
-  gap: 10px;
-}
-
 .info {
   display: grid;
+  position: relative;
   font-family: "Oswald", sans-serif;
   margin: auto;
-  gap: 20px;
 }
 .info .main_pic {
-  grid-row: 1;
+  display: flex;
   grid-column: 1/4;
   overflow: hidden;
+  max-height: 700px;
 }
 .info .main_pic img {
   height: -moz-fit-content;
   height: fit-content;
 }
+.info #arrow_left {
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  align-self: center;
+  padding-left: 15px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+.info #arrow_right {
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  justify-self: right;
+  justify-content: end;
+  align-self: center;
+  padding-right: 15px;
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  cursor: pointer;
+}
+.info .left_info {
+  margin-left: 30px;
+}
 .info .details {
   display: flex;
-  padding: 0px 0px 0px 70px;
+  padding: 30px 0px 0px 40px;
   gap: 200px;
+  border-left: 20px solid rgb(115, 186, 155);
 }
 .info .left_numbers {
-  padding: 5px;
+  padding-left: 30px;
 }
 .info .left_numbers h3 {
   font-weight: 600;
@@ -86,19 +98,177 @@ input, textarea {
 }
 .info .left_numbers .progIcons {
   display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
+  grid-template-columns: 60px 60px 60px 60px;
+  gap: 10px;
 }
 .info .left_para {
   display: inline-block;
   grid-column: 3/4;
+  padding-bottom: 15px;
+  margin-right: 5px;
 }
 .info .right_title {
   display: inline-flex;
   font-weight: 600;
   letter-spacing: 2px;
+  padding-top: 15px;
   justify-self: end;
 }
+.info .right_info {
+  display: grid;
+  position: relative;
+  grid-template-rows: 700px;
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+.info .right_info .right_para {
+  display: grid;
+  padding-right: 20px;
+  padding-top: 15px;
+  border-right: 20px solid rgb(115, 186, 155);
+}
+.info .right_info .slideshow {
+  overflow: hidden;
+  display: flex;
+}
+.info .right_info #slidearrow_left {
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  align-self: center;
+  padding-left: 15px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+.info .right_info #slidearrow_right {
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  align-self: center;
+  padding-right: 30px;
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  cursor: pointer;
+}
 .info .video {
-  border: 5px solid orange;
+  width: 950px;
+  height: 534px;
+  position: absolute;
+}
+
+.header {
+  display: grid;
+  padding: 10px;
+  grid-template: 1 fr/3 fr;
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+}
+.header button {
+  color: white;
+  cursor: pointer;
+}
+.header .head_left {
+  display: flex;
+  justify-self: left;
+}
+.header .head_menu {
+  display: flex;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: right;
+  gap: 20px;
+}
+
+.middleImgs {
+  display: grid;
+  grid-template-rows: 110px;
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+  max-width: 1200px;
+  padding-top: 80px;
+  padding-bottom: 5px;
+  margin: auto;
+}
+.middleImgs .titleBIO {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 90px;
+  font-size: 40px;
+}
+.middleImgs .fam {
+  max-height: 400px;
+  max-width: 300px;
+  align-items: center;
+  justify-self: center;
+  position: absolute;
+  overflow: hidden;
+}
+.middleImgs .me {
+  max-height: 500px;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.middleImgs .bioInfo {
+  justify-self: right;
+  width: 35%;
+}
+
+.aboutheader button {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.aboutheader {
+  display: grid;
+  padding: 10px;
+  grid-template: 1 fr/3 fr;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+}
+.aboutheader .head_left {
+  display: flex;
+  justify-self: left;
+}
+.aboutheader .head_menu {
+  display: flex;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: right;
+  gap: 20px;
+}
+
+.footer button {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.footer {
+  display: grid;
+  padding: 10px;
+  grid-template: 1 fr/3 fr;
+}
+.footer .foot_left {
+  display: flex;
+  justify-self: left;
+}
+.footer .right_email {
+  display: flex;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: right;
+  gap: 20px;
+  padding-right: 10px;
+}
+.footer .right_email button {
+  color: rgb(89, 47, 40);
 }/*# sourceMappingURL=index.css.map */
