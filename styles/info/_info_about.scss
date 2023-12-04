@@ -13,6 +13,11 @@
         margin-left: 90px;
         // border: 5px solid yellow;
         font-size: 40px;
+        @include respond('431px'){
+            position: relative;
+            justify-self: center;
+            margin: 0px;
+        }
     }
     .fam{
         // display: flex;
@@ -23,6 +28,9 @@
         // border: 7px solid red;
         position: absolute;
         overflow:hidden;
+        @include respond('431px'){
+            position: relative;
+        }
     }
     .me{
         // display: flex;
@@ -35,17 +43,30 @@
     }
     .bioInfo{
         justify-self:right;
-        width:35%
+        width:35%;
+        @include respond('431px'){
+            justify-self: center;
+            width: 80%;
+            padding: 10px;
+        }
     }
     padding-top: 80px;
     padding-bottom: 5px;
     margin: auto;
+    @include respond('431px'){
+        padding-top: 0px;
+        position: relative;
+        align-items: center;
+    }
 }
 
 .aboutheader button{
     font-size: 30px;
     color: black;
     cursor: pointer;
+    @include respond('431px'){
+        font-size: 15px;
+    }
 }
 .aboutheader{
     display: grid;
@@ -65,4 +86,11 @@
     }
     position:absolute;
     width: 100%;
+    @include respond('431px'){
+        .aboutheader button {
+            font-size: 15px;
+        }
+        position: unset;
+        align-items: center;
+    }
 }

@@ -1,8 +1,5 @@
 @mixin respond($screenSize){
-  @media screen and (max-width: 1440){
-    // @media screen and (min-width: 430){
+  @media screen and (max-width: $screenSize){
     @content;
-    // }
   }
 }
-

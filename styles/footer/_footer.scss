@@ -23,4 +23,11 @@
     .right_email button{
         color: rgb(89,47,40);
     }
+    @include respond('431px'){
+        font-size: smaller;
+        grid-template: 1fr/58%;
+        button{
+            font-size: small;
+        }
+    }
 }

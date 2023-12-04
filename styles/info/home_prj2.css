@@ -1,0 +1,114 @@
+.info {
+  display: grid;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  margin: auto;
+}
+.info .main_pic {
+  display: flex;
+  grid-column: 1/4;
+  overflow: hidden;
+  max-height: 700px;
+}
+.info .main_pic img {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.info .left_info {
+  margin-left: 30px;
+}
+.info .details {
+  display: flex;
+  padding: 30px 0px 0px 40px;
+  gap: 200px;
+  border-left: 20px solid rgb(115, 186, 155);
+}
+.info .left_numbers {
+  padding-left: 30px;
+}
+.info .left_numbers h3 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.info .left_numbers .progIcons {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  gap: 10px;
+}
+.info .left_para {
+  display: inline-block;
+  grid-column: 3/4;
+  padding-bottom: 15px;
+  margin-right: 5px;
+}
+.info .right_title {
+  display: inline-flex;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-top: 15px;
+  justify-self: end;
+}
+.info .right_info {
+  display: grid;
+  position: relative;
+  grid-template-rows: 700px;
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+.info .right_info .right_para {
+  display: grid;
+  padding-right: 20px;
+  padding-top: 15px;
+  border-right: 20px solid rgb(115, 186, 155);
+}
+.info .right_info .slideshow {
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+.info .right_info .slide_inner {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+.info .right_info .slide_inner .slick-prev:before {
+  left: 15px;
+  z-index: 1;
+}
+.info .right_info .slide_inner .slick-next:before {
+  left: 400px;
+  z-index: 1;
+}
+.info .video {
+  position: relative;
+  min-height: 534px;
+}
+.info .video iframe {
+  position: absolute;
+}
+.info .header {
+  display: grid;
+  padding: 10px;
+  grid-template: 1 fr/3 fr;
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+}
+.info .header button {
+  color: white;
+  cursor: pointer;
+}
+.info .header .head_left {
+  display: flex;
+  justify-self: left;
+}
+.info .header .head_menu {
+  display: flex;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: right;
+  gap: 20px;
+}/*# sourceMappingURL=home_prj2.css.map */
